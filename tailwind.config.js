@@ -13,7 +13,7 @@ export default {
         metal: "#565584",
         tahiti: "#3ab7bf",
         silver: "#ecebff",
-        black: "#18181b",
+        black: "#000000",
         gold: "#F8FF00",
       },
       container: {

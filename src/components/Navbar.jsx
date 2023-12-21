@@ -1,4 +1,5 @@
-import React from "react";
+import { GoSun } from "react-icons/go";
+import { HiMoon } from "react-icons/hi2";
 
 const Navlinks = [
   {
@@ -23,10 +24,11 @@ const Navlinks = [
   },
 ];
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ theme, setTheme }) => {
   return (
-    <header className="shadow-lg">
-      <div className="container">
+    <header className="shadow-md bg-silver dark:bg-black dark:text-white duration-300 ease-linear">
+      <div className="container ">
         <div className="flex justify-between items-center">
           <div>
             <h2 className="text-3xl font-bold">Rent-a-Car</h2>
@@ -36,7 +38,7 @@ const Navbar = () => {
               {Navlinks.map((data) => (
                 <li className="py-1" key={data.id}>
                   <a
-                    className="inline-block text-lg py-2 hover:border-b-2
+                    className="inline-block text-lg py-1 hover:border-b-2
                      hover:text-purple hover:border-black transition-colors duration-500 font-medium"
                     href={data.link}
                   >
@@ -45,6 +47,13 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="cursor-pointer">
+            {theme === "light" ? (
+              <GoSun onClick={() => setTheme("dark")} className="h-6 w-6" />
+            ) : (
+              <HiMoon onClick={() => setTheme("light")} className="h-6 w-6" />
+            )}
           </div>
         </div>
       </div>
