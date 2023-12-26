@@ -3,9 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
-   
-
     extend: {
+      screens: {
+        
+        '3xl': '1440px',
+      },
       colors: {
         white: "#ffffff",
         purple: "#7c3aed",

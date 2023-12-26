@@ -27,8 +27,8 @@ const Navlinks = [
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ theme, setTheme }) => {
   return (
-    <header className="shadow-md bg-silver dark:bg-black dark:text-white duration-300 ease-linear">
-      <div className="container ">
+    <header className="shadow-md bg-silver dark:bg-black dark:text-white duration-300 ">
+      <div className="container z-20 ">
         <div className="flex justify-between items-center">
           <div>
             <h2 className="text-3xl font-bold">Rent-a-Car</h2>
@@ -38,7 +38,7 @@ const Navbar = ({ theme, setTheme }) => {
               {Navlinks.map((data) => (
                 <li className="py-1" key={data.id}>
                   <a
-                    className="inline-block text-lg py-1 hover:border-b-2
+                    className="inline-block text-lg py-1
                      hover:text-purple hover:border-black transition-colors duration-500 font-medium"
                     href={data.link}
                   >

@@ -8,6 +8,9 @@ import whitecar from "../images/white-car.png";
 import appstore from "../images/app_store.png";
 import playstore from "../images/play_store.png";
 import whitecarfront from "../images/white-carfront.jpg";
+import client1 from "../images/clientOne.png";
+import client2 from "../images/clientTwo.png";
+import client3 from "../images/clientThree.jpg";
 
 export {
   car,
@@ -20,4 +23,7 @@ export {
   appstore,
   playstore,
   whitecarfront,
+  client1,
+  client2,
+  client3,
 };
